@@ -1,0 +1,36 @@
+<!-- user can register for account on this page-->
+<h1>Register</h1>
+
+<!-- Form for user registration -->
+<form action = "/register" method="POST">
+
+<!-- name -->
+<div>
+    <label for ="name">Name</label>
+    <input type="text" id="name" name="name" required>
+</div>
+ 
+<!-- email -->
+<div>
+    <label for ="email">Email</label>
+    <input type="email" id="email" name="email" required>
+</div>
+
+<!-- number -->
+<div>
+    <label for ="number">Number</label>
+    <input type="tel" id="number" name="number" required>
+</div>
+
+<!-- password -->
+<div>
+    <label for ="password">Password</label>
+    <input type="password" id="password" name="password" required>
+</div>
+
+<!-- complete registation-->
+<button type ="submit"> Register</button>
+</form>
+
+<!-- link to take us back to login page-->
+<a href = "/login">Login</a>

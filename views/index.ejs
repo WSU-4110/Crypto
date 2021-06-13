@@ -1,0 +1,10 @@
+
+<!-- can only get to this page if auth-->
+
+<!-- <%= %> is how we render out the variable-->
+<h1> INDEX hello <%= name %></h1>
+
+<!-- log out form -->
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+</form>
