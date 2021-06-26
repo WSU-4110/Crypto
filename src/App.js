@@ -1,14 +1,14 @@
 import React from "react"
 import { Container } from "react-bootstrap"
-import { AuthProvider } from "../contexts/AuthContext"
+import { AuthProvider } from "./contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom" // npm i react-router-dom
-import Home from "./Home"
-import Login from "./Login"
-import PrivateRoute from "./PrivateRoute"
-import ForgotPassword from "./ForgotPassword"
-import Register from "./Register"
-import { HeaderToolbar } from "./Header"
-import { Profile } from "./Profile"
+import Home from "./components/Home"
+import Login from "./components/Login"
+import PrivateRoute from "./components/PrivateRoute"
+import ForgotPassword from "./components/ForgotPassword"
+import Register from "./components/Register"
+import { HeaderToolbar } from "./components/Header"
+import { Profile } from "./components/Profile"
 
 
 function App() {
@@ -22,10 +22,10 @@ function App() {
             {/*switch determines which route we are currently on */}
             <Switch>
               <Route path="/login"> <Login /> </Route>
-              <PrivateRoute path="/"> <Home /> </PrivateRoute>
-              <PrivateRoute path="/profile"> <Profile /> </PrivateRoute>
               <Route path="/register"> <Register /> </Route>
               <Route path="/forgotpassword"> <ForgotPassword /> </Route>
+              <PrivateRoute path="/profile"> <Profile /> </PrivateRoute>
+              <PrivateRoute path="/"> <Home /> </PrivateRoute>
             </Switch>
           </div>
         </Router>

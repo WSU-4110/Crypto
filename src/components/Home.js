@@ -34,7 +34,6 @@ export default function Home() {
           {/* alert if cant log out*/}
           {error && <Alert variant="danger">{error}</Alert>}
           {/* welcome user with email*/}
-          <div className="div-2">Hello {currentUser.email}</div>
 
         </Card.Body>
       </Card>
