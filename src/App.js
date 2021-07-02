@@ -11,6 +11,7 @@ import { HeaderToolbar } from "./components/Header"
 import Profile from "./components/Profile"
 import { FirstPartyEducation } from "./components/FirstPartyEducation"
 import { ThirdPartyEducation } from "./components/ThirdPartyEducation"
+import Faq from './components/FAQ/Faq'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <PrivateRoute path="/profile" component={Profile} />
               <Route path="/firstpartyeducation"> <FirstPartyEducation /> </Route>
               <Route path="/thirdpartyeducation"> <ThirdPartyEducation /> </Route>
+              <Route path="/faq"> <Faq /> </Route>
               {/*  locking down home */}
               <PrivateRoute exact path="/" component={Home} />
             </Switch>
