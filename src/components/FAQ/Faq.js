@@ -1,4 +1,4 @@
-import './Faq.css'
+
 import { Card, Accordion, Button, ListGroup } from "react-bootstrap"
 export default function Faq() {
 
@@ -9,11 +9,11 @@ export default function Faq() {
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="outline-secondary" eventKey="0">
-                        What Are Cryptocurrencies?
+                        Will There Be Other Features Added On The Site In The Future?
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <Card.Body>Cryptocurrencies are a digital asset that started as a medium of exchange for people to buy goods and services. Over time, their functionality has expanded.
+                            <Card.Body>Yes, there will be additional features implemented on the site as we aim to update and resolve bugs on the site.
 
                             </Card.Body>
                         </Accordion.Collapse>
@@ -98,11 +98,11 @@ export default function Faq() {
                 <Card>
                     <Card.Header>
                         <Accordion.Toggle as={Button} variant="outline-secondary" eventKey="7">
-                        Why are there so many cryptocurrencies?
+                        How Can I Get Back To The Home Page?
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="7">
-                            <Card.Body>People saw the success of Bitcoin and tried to improve existing functionality and provide new functionality with new cryptocurrencies. Additionally, investors and developers wanted to make profit.</Card.Body>
+                            <Card.Body>Clicking on the "home" tab on the top of the page or the "Crypto Pro" on the top left of the site will take you back to the home page. </Card.Body>
                         </Accordion.Collapse>
                 </Card>
 
