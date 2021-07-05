@@ -32,6 +32,7 @@ export const HeaderToolbar = () => {
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/thirdpartyeducation">Third Party Education</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="/faq">FAQ</Nav.Link>
             </Nav>
 
 
