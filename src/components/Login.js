@@ -84,7 +84,6 @@ export default function Login() {
                 {/* if user needs to create an account send to register */}
                 <Link to="/register" >Create an account</Link>
             </div>
-    
         </>
 
     )
