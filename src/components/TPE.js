@@ -25,6 +25,7 @@
           return res.json()
           }).then((data)=>{
               console.log(data)
+              
               data.articles.forEach(article =>{
 
                 let li = document.createElement('li');

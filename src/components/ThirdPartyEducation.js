@@ -6,7 +6,7 @@ export const ThirdPartyEducation = () => {
         <div className="ThirdPartyEducation">
             <form className="search" action ="">
 
-                <label for="News"/>
+                <label for="">News</label>
                 
                 <input className ="input" type="text" /><br />
                 
