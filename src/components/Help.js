@@ -25,8 +25,6 @@ export default function Faq() {
                     </Card.Header>
                         <Accordion.Collapse eventKey="1">
                             <Card.Body>When you have entered thhe site, click on the register button and follow the prompted steps.</Card.Body>
-                           
-                            
                         </Accordion.Collapse>
                 </Card>
 
@@ -49,8 +47,6 @@ export default function Faq() {
                     </Card.Header>
                         <Accordion.Collapse eventKey="3">
                             <Card.Body>This consists of basic information needed for users to learn how to trade cryptocurrencies.</Card.Body>
-                           
-                            
                         </Accordion.Collapse>
                 </Card>
 
