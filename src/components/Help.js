@@ -13,9 +13,7 @@ export default function Faq() {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <Card.Body>Yes, there will be additional features implemented on the site as we aim to update and resolve bugs on the site.
-
-                            </Card.Body>
+                            <Card.Body>Yes, there will be additional features implemented on the site as we aim to update and resolve bugs on the site.</Card.Body>
                         </Accordion.Collapse>
                 </Card>
 
@@ -26,9 +24,7 @@ export default function Faq() {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="1">
-                            <Card.Body>When you have entered thhe site, click on the register button and follow the prompted steps. 
-
-                            </Card.Body>
+                            <Card.Body>When you have entered thhe site, click on the register button and follow the prompted steps.</Card.Body>
                            
                             
                         </Accordion.Collapse>
@@ -41,9 +37,7 @@ export default function Faq() {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="2">
-                            <Card.Body>Click on the forgot password button, you will be sent an email directing you on how to change/reset your password.
-                               
-                            </Card.Body>
+                            <Card.Body>Click on the forgot password button, you will be sent an email directing you on how to change/reset your password.</Card.Body>
                         </Accordion.Collapse>
                 </Card>
 
@@ -54,9 +48,7 @@ export default function Faq() {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="3">
-                            <Card.Body>This consists of basic information needed for users to learn how to trade cryptocurrencies.
-
-                            </Card.Body>
+                            <Card.Body>This consists of basic information needed for users to learn how to trade cryptocurrencies.</Card.Body>
                            
                             
                         </Accordion.Collapse>
