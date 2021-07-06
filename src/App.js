@@ -11,6 +11,7 @@ import { HeaderToolbar } from "./components/Header"
 import Profile from "./components/Profile"
 import { FirstPartyEducation } from "./components/FirstPartyEducation"
 import { ThirdPartyEducation } from "./components/ThirdPartyEducation"
+import Help from './components/Help'
 import ProfileChange from "./components/ProfileChange"
 import Help from "./components/Faq"
 
