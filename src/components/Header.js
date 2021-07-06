@@ -60,7 +60,7 @@ export const HeaderToolbar = () => {
                                 <NavDropdown.Item href="/profilechange"> Change Profile Information</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 {/* link to FAQ/Help */}
-                                <NavDropdown.Item href="/faq">Help</NavDropdown.Item>
+                                <NavDropdown.Item href="/help">Help</NavDropdown.Item>
 
                                 <NavDropdown.Divider />
                                 {/* Log out */}
