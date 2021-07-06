@@ -61,15 +61,12 @@ export const HeaderToolbar = () => {
                                 <NavDropdown.Divider />
                                 {/* link to FAQ/Help */}
                                 <NavDropdown.Item href="/help">Help</NavDropdown.Item>
-
                                 <NavDropdown.Divider />
                                 {/* Log out */}
                                 <NavDropdown.Item onClick={handleLogout}> Log Out</NavDropdown.Item>
-
                             </NavDropdown>
                             : null}
                     </Nav>
-
 
                     <Nav>
                         {/* drop down for educational pages */}
