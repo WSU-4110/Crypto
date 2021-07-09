@@ -32,6 +32,7 @@ function App() {
               <PrivateRoute path="/profilechange" component={ProfileChange} />
               <Route path="/firstpartyeducation"> <FirstPartyEducation /> </Route>
               <Route path="/thirdpartyeducation"> <ThirdPartyEducation /> </Route>
+              <Route path="/Search"> < Search /> </Route>
               <Route path="/help"> <Help /> </Route>
               <Route path="/"> <Home /> </Route>
             </Switch>
