@@ -14,7 +14,7 @@ import { ThirdPartyEducation } from "./components/ThirdPartyEducation"
 import { Search } from "./components/Search"
 import Help from './components/Help'
 import ProfileChange from "./components/ProfileChange"
-
+import Policy from "./components/Policy"
 function App() {
   return (
     //container to format register page 
@@ -36,6 +36,7 @@ function App() {
               <Route path="/search"> < Search /> </Route>
               <Route path="/help"> <Help /> </Route>
               <Route path="/"> <Home /> </Route>
+              <Route path="policy"> <Policy /> </Route>
             </Switch>
           </div>
         </Router>
