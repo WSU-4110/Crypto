@@ -1,0 +1,26 @@
+import { Search } from '../src/components/Search'
+
+
+test('setCoins ', () => {
+    setCoins(Bitcoin);
+})
+
+test('setSearch ', () => {
+    setSearch(Bitcoin);
+})
+
+test('handleChange ', () => {
+    handleChange(e)
+})
+
+test('filteredCoins ', () => {
+    filteredCoins(coins.filter(coin))
+})
+
+test('filter ', () => {
+    filter(e)
+})
+
+test('sort ', () => {
+    sort(e, this.e)
+})
