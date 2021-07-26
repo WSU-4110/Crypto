@@ -12,11 +12,11 @@ import Profile from "./components/Profile"
 import { FirstPartyEducation } from "./components/FirstPartyEducation"
 import { ThirdPartyEducation } from "./components/ThirdPartyEducation"
 import { Search } from "./components/Search"
-import Help from './components/Help'
+import Help from "./components/Help"
 import ProfileChange from "./components/ProfileChange"
 import SystemUpdates from "./components/SystemUpdates" 
 import CryptoChart from "./components/CryptoChart"
-
+import {Policy} from "./components/Policy"
 
 function App() {
   return (
@@ -42,6 +42,7 @@ function App() {
               <Route path="/cryptochart"> <CryptoChart /> </Route>
              
               <Route path="/"> <Home /> </Route>
+              <Route path="/policy"> <Policy /> </Route>
             </Switch>
           </div>
         </Router>
