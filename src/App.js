@@ -16,6 +16,7 @@ import Help from './components/Help'
 import ProfileChange from "./components/ProfileChange"
 import {Policy} from "./components/Policy"
 import SystemUpdates from "./components/SystemUpdates"
+
 function App() {
   return (
     //container to format register page 
