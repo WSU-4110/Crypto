@@ -13,12 +13,7 @@ export const Policy = () => {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <Card.Body> -To fulfill or meet the reason you provided the information. For example, to provide services.
--To help maintain the safety, security, and integrity of Crypto Pro’s site and services. For example, Crypto Pro may screen and use the information to protect against spammers, hackers, and others who pose harm to the site and services; Crypto Pro may share information with moderation service providers; and Crypto Pro may share the information with law enforcement.
--To evaluate and improve the site and services. For example, Crypto Pro may aggregate and/or de-identify information to produce statistical data.
--To monitor and enforce user compliance with the guidelines of the law and its policies. 
--To respond to law enforcement requests and as required by applicable law, court order, or governmental regulations.
-</Card.Body>
+                            <Card.Body>To fulfill or meet the reason you provided the information. For example, to provide services, to help maintain the safety, security, and integrity of Crypto Pro’s site and services. For example, Crypto Pro may screen and use the information to protect against spammers, hackers, and others who pose harm to the site and services; Crypto Pro may share information with moderation service providers; and Crypto Pro may share the information with law enforcement. Also, to evaluate and improve the site and services. For example, Crypto Pro may aggregate and/or de-identify information to produce statistical data. Another purpose is to monitor and enforce user compliance with the guidelines of the law and its policies. Furthermore, to respond to law enforcement requests and as required by applicable law, court order, or governmental regulations.</Card.Body>
                         </Accordion.Collapse>
                 </Card>
 
