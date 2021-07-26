@@ -51,12 +51,7 @@ export const Policy = () => {
                         </Accordion.Toggle>
                     </Card.Header>
                         <Accordion.Collapse eventKey="3">
-                            <Card.Body>You have the right to request that Crypto Pro disclose certain information to you about its collection and use of your personal information. After Crypto Pro receives and confirms your verifiable request, it will disclose to you: •	The categories of personal information we collected about you.
--The categories of sources for the personal information we collected about you.
--Our business or commercial purpose for collecting that personal information.
--The categories of third parties with whom we share that personal information.
--The specific pieces of personal information we collected about you.
-</Card.Body>
+                            <Card.Body>You have the right to request that Crypto Pro disclose certain information to you about its collection and use of your personal information. After Crypto Pro receives and confirms your verifiable request, it will disclose to you: The categories of personal information we collected about you, the categories of sources for the personal information we collected about you, our business or commercial purpose for collecting that personal information, the categories of third parties with whom we share that personal information, and the specific pieces of personal information we collected about you.</Card.Body>
                         </Accordion.Collapse>
                 </Card>
 
