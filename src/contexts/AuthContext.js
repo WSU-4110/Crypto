@@ -19,6 +19,7 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState()
     // default loading (useEffect will set to no loading)
     const [loading, setLoading] = useState(true)
+    const [cryptoUser, setCryptoUser] = useState({});
 
     // function for user registration
     // takes in email and password 
@@ -74,7 +75,9 @@ export function AuthProvider({ children }) {
         logout,
         passwordReset,
         changeEmail,
-        changePassword
+        changePassword,
+        cryptoUser,
+        setCryptoUser
     }
 
     // do not render any of the application until
