@@ -14,7 +14,9 @@ import { ThirdPartyEducation } from "./components/ThirdPartyEducation"
 import { Search } from "./components/Search"
 import Help from './components/Help'
 import ProfileChange from "./components/ProfileChange"
-import SystemUpdates from "./components/SystemUpdates"
+import SystemUpdates from "./components/SystemUpdates" 
+import CryptoChart from "./components/CryptoChart"
+
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
               <Route path="/search"> < Search /> </Route>
               <Route path="/help"> <Help /> </Route>
               <Route path="/systemupdates"> <SystemUpdates /> </Route>
+              <Route path="/cryptochart"> <CryptoChart /> </Route>
+             
               <Route path="/"> <Home /> </Route>
             </Switch>
           </div>
