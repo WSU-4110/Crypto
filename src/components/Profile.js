@@ -38,41 +38,21 @@ export default function Profile() {
 
     }, [cryptoUser])
 
-    // handle logout
-    async function handleLogout() {
-        setError("") // empty
-
-        try {
-            // wait for logout
-            await logout()
-            // go back to login page
-            history.push("/login")
-        }
-        catch {
-            //error message
-            setError("ERROR: Failed to log out of account")
-        }
-    }
-
     return (
         <>
-            <Card>
-                <Card.Header> Profile</Card.Header>
+            <Card className="mb-5">
+                <Card.Header as="h2">Profile</Card.Header>
                 <Card.Body>
 
-                    {/* alert if cant log out*/}
-                    {error && <Alert variant="danger">{error}</Alert>}
-
-                    <Card border="dark" className=" p-4" >
-                        <Card.Title  > User Information:</Card.Title>
+                    <Card border="dark">
+                        <Card.Header as="h5">User Information</Card.Header>
                         <Card.Body>
                             Email: {currentUser.email}
                             <br />
-                            Number: {cryptoUser?.data?.userphonenumber ?? ""}
+                            Phone Number: {cryptoUser?.data?.userphonenumber ?? ""}
                             <div className=" mt-2">
                                 <Link to="/profilechange">Change User Information</Link>
                             </div>
-
                         </Card.Body>
                     </Card>
 
@@ -85,9 +65,12 @@ export default function Profile() {
 
                     <br></br>
 
-                    <Card>
-                        <Card.Header> Alert Configuration </Card.Header>
+                    <Card border="dark">
+                        <Card.Header as="h5"> Alert Configuration </Card.Header>
                         <Card.Body>
+                            <Card.Text>
+                                SMS Alert is triggered when current Cryptocurrency Price (in USD) is less than or equaled to alert value.
+                            </Card.Text>
                             <Form className="alertForm">
                                 <Form.Group as={Row}>
                                     <Form.Label column sm="2">Bitcoin</Form.Label>
@@ -113,13 +96,6 @@ export default function Profile() {
                     </Card>
                 </Card.Body>
             </Card>
-
-
-            {/* log out link */}
-            <div className="w-100">
-                <Button variant="primary" onClick={handleLogout}> Log Out</Button>
-            </div>
         </>
     )
 }
-
