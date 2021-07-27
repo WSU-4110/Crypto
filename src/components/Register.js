@@ -34,7 +34,7 @@ export default function Register() {
         // call register function from AuthContext
         register(emailRef.current.value, passwordRef.current.value, phoneNumberRef.current.value)
             .then(() => history.push("/profile"))
-            .catch(err => setError(`ERROR: ${err}`))
+            .catch(err => setError(`${err}`))
             .finally(() => setLoading(false))
     }
 
