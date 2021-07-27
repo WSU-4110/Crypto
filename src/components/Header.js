@@ -47,6 +47,8 @@ export const HeaderToolbar = () => {
                             <NavDropdown.Item href="/">Home Page</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/systemupdates">System Updates</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/contactus">Contact Us</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
 
