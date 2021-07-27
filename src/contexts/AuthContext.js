@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect, createContext } from "react"
 import { auth } from "../firebase" // from firebase.js file 
+import { getUser, postUser } from "../services/usersClient"
 
 // create context (used inside of provider)
 // global state store
@@ -24,14 +25,29 @@ export function AuthProvider({ children }) {
     // function for user registration
     // takes in email and password 
     // returns a new user it created  
-    function register(email, password) {
-        return auth.createUserWithEmailAndPassword(email, password)
+    async function register(userEmail, password, userphonenumber) {
+        const { email, uid } = (await auth.createUserWithEmailAndPassword(userEmail, password)).user
+        const id = await postUser({
+            userid: uid,
+            useremail: email,
+            userphonenumber
+        })
+
+        setCryptoUser({
+            id,
+            data: {
+                currency: {},
+                useremail: email,
+                userid: uid,
+                userphonenumber
+            }
+        })
     }
 
     // useEffect so it only runs once  
     useEffect(() => {
         // this function will call a method that will unsub 
-        const unsubscribe = auth.onAuthStateChanged(user => {
+        const unsubscribe = auth.onAuthStateChanged( user => {
             setCurrentUser(user)
             setLoading(false)
         })
@@ -39,9 +55,22 @@ export function AuthProvider({ children }) {
         return unsubscribe
     }, [])
 
+    useEffect(async () => {
+        if(currentUser){
+            const {uid} = currentUser;
+            if(!cryptoUser.hasOwnProperty(`userid`) || cryptoUser.userid !== uid) {
+                const userData = await getUser(uid)
+                console.log(userData)
+                setCryptoUser(userData)
+            }
+        }
+    }, [currentUser])
+
     // function for user login, sings in to account
-    function login(email, password) {
-        return auth.signInWithEmailAndPassword(email, password)
+    async function login(email, password) {
+        const {uid} = await auth.signInWithEmailAndPassword(email, password)
+        const userData = await getUser(uid)
+        setCryptoUser(userData)
     }
 
     // function for user logout, sings out of account
@@ -76,8 +105,7 @@ export function AuthProvider({ children }) {
         passwordReset,
         changeEmail,
         changePassword,
-        cryptoUser,
-        setCryptoUser
+        cryptoUser
     }
 
     // do not render any of the application until

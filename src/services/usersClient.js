@@ -8,5 +8,10 @@ export async function postUser(request) {
         },
         body: JSON.stringify(request)
     })
+    return results.text();
+}
+
+export async function getUser(id) {
+    const results = await fetch(`${baseURL}/user/${id}`)
     return results.json();
 }
