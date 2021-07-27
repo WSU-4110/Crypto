@@ -39,7 +39,7 @@ export const HeaderToolbar = () => {
                 <Navbar bg="dark" variant="dark" className="text-center"  >
                     {/*<Navbar.Brand href="/home">Crypto Pro</Navbar.Brand> */}
                     {/* Crypto Pro header click -> home  */}
-                    <Navbar.Brand href="/home">Crypto Pro</Navbar.Brand>
+                    <Navbar.Brand className="p-3" href="/home">Crypto Pro</Navbar.Brand>
                     <Navbar.Toggle />
 
                     <Nav>
