@@ -43,6 +43,7 @@ function App() {
               <Route path="/cryptochart"> <CryptoChart /> </Route>
               <Route path="/policy"> <Policy /> </Route>
               <Route path="/contactus"> <ContactUs /> </Route>
+              <Route path="/home"> <Home /> </Route>
               <Route path="/"> <Home /> </Route>
             </Switch>
           </div>
