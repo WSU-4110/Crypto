@@ -17,12 +17,14 @@ React Application for Cryptocurrency alerts, charts, statics and more.
 
 ## Repositories 
 
-
+### Front-End
  - Main Repository: [Crypto Repository](https://github.com/WSU-4110/Crypto)  
 
- - First Back-end Repository: [Crypto-Functions Repository](https://github.com/WSU-4110/Crypto-Functions)
+### Back-End (REST API Endpoints)
+ - Back-end Functions Repository: [Crypto-Functions Repository](https://github.com/WSU-4110/Crypto-Functions)
 
- - Second Back-end Repository: [Crypto-ScheduledFunctions Repository](https://github.com/WSU-4110/Crypto-ScheduledFunctions)
+### Back-End (Scheduled Functions)
+ - Back-end Scheduled Functions Repository: [Crypto-ScheduledFunctions Repository](https://github.com/WSU-4110/Crypto-ScheduledFunctions)
 
 
 
