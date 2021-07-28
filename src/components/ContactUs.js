@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Button, ListGroup } from "react-bootstrap"
+import { Card, Button, Container, Row, Col, ListGroup } from "react-bootstrap"
 
 export default function Home() {
 
@@ -10,17 +10,48 @@ export default function Home() {
                 <Card>
                     <Card.Header as="h5"> Contact Us </Card.Header>
                         <Card.Body>
-                            <p>To contact the development team, please reach out to the project contributors in GitHub at:</p>
+                        <Container>
+                        <Row>
+                        <Col> 
+                            <h2>Chris Gumieny</h2>
+                            <img src="/images/chris.png" alt="chris"></img>
                             <Button href="https://github.com/chrisgumieny" variant="primary" target="_blank">
-                                chrisgumieny</Button>
-                            <Button href="https://github.com/gj6645" variant="secondary" target="_blank">
-                                gj6645</Button>
-                            <Button href="https://github.com/IKwiotek" variant="success" target="_blank">
-                                IKwiotek</Button>
-                            <Button href="https://github.com/snshamwow" variant="warning" target="_blank">
-                                snshamwow</Button>
-                            <Button href="https://github.com/abdulr07" variant="danger" target="_blank">
-                                abdulr07</Button>
+                                    chrisgumieny</Button>{"\n"}
+                        </Col>
+
+                        <Col>
+                            <h2>Viona Veseli</h2>
+                            <img src="/images/viona.png" alt="viona"></img> 
+                            <Button href="https://github.com/gj6645" variant="primary" target="_blank">
+                                    gj6645</Button>{"\n"}
+                        </Col>
+                        </Row>    
+
+                        <Row>
+                        <Col>
+                            <h2>Ian Kwiotek</h2>
+                            <img src="/images/ian.png" alt="ian"></img>
+                            <Button href="https://github.com/IKwiotek" variant="primary" target="_blank">
+                                    IKwiotek</Button>{"\n"}
+                        </Col>
+
+                        <Col>
+                            <h2>Sadeem Shamoun</h2>
+                            <img src="/images/abdul.png" alt="sadeem"></img>
+                            <Button href="https://github.com/snshamwow" variant="primary" target="_blank">
+                                    snshamwow</Button>{"\n"}
+                        </Col>
+                        </Row>
+
+                        <Row>
+                        <Col>
+                            <h2>Abdul Rashid</h2>
+                            <img src="/images/sadeem.png" alt="abdul"></img><br></br>
+                            <Button href="https://github.com/abdulr07" variant="primary" target="_blank">
+                                    abdulr07</Button>{"\n"}
+                        </Col>
+                        </Row>
+                        </Container>
                         </Card.Body>
                 </Card> <br></br>
                 <Card>
